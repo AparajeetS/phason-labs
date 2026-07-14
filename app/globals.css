@@ -69,16 +69,27 @@ h1 em { font-style:normal; color:var(--violet); }
 .program-list article { display:grid; grid-template-columns:100px 1fr 1.3fr 30px; gap:30px; align-items:center; min-height:145px; border-bottom:1px solid #373842; transition:padding .25s,background .25s; }
 .program-list article:hover { padding:0 20px; background:#171722; }
 .program-list span { font:11px var(--font-mono); color:#777582; }.program-list h3 { font-size:27px;font-weight:500;margin:0; }.program-list p { color:#aaa8b0;line-height:1.5; }.program-list b { color:var(--violet);font-weight:400; }
+.program-list small { display:block; margin-top:10px; color:var(--violet); font:9px var(--font-mono); text-transform:uppercase; letter-spacing:.14em; }
 .about { padding:170px 0; display:grid; grid-template-columns:1fr 1fr; gap:110px; align-items:center; }
 .about-mark { display:flex; flex-direction:column; align-items:center; gap:30px; font:10px var(--font-mono); letter-spacing:.15em; }
 .about-mark .mark { width:360px;height:360px; }
 .about-copy>p:not(.eyebrow) { font-size:19px;line-height:1.7;color:#57545d;max-width:570px; }
+.founder { border-top:1px solid var(--line); padding:140px 0; }
+.founder-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:100px; }
+.founder h2 { font-size:clamp(52px,6vw,88px); line-height:1; letter-spacing:-.05em; margin:20px 0 0; font-weight:500; }
+.founder-profile>p { font-size:22px; line-height:1.55; color:#525058; max-width:680px; }
+.founder-profile strong { color:var(--ink); font-weight:550; }
+.founder-profile dl { margin:60px 0 0; border-top:1px solid var(--line); }
+.founder-profile dl div { display:grid; grid-template-columns:130px 1fr; padding:17px 0; border-bottom:1px solid var(--line); }
+.founder-profile dt { font:10px var(--font-mono); text-transform:uppercase; letter-spacing:.12em; color:#77747c; }
+.founder-profile dd { margin:0; font-size:14px; }
+.founder-profile a:hover { color:var(--violet); }
 footer { background:var(--violet); color:white; padding:110px 0 32px; }
 .footer-top { display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:100px; }
 .footer-top p { font-size:clamp(50px,6.5vw,98px);line-height:.95;letter-spacing:-.055em;margin:0; }
 .footer-top>a { border-bottom:1px solid white;padding-bottom:10px;font-size:17px;display:flex;gap:60px; }
 .footer-bottom { border-top:1px solid #8162ff;padding-top:25px;display:flex;justify-content:space-between;font:10px var(--font-mono);text-transform:uppercase;letter-spacing:.12em; }
 @media(max-width:900px){
-  .shell{width:min(100% - 36px,1400px)} .nav{grid-template-columns:1fr auto}.nav nav{display:none}.nav-contact{font-size:0}.nav-contact span{font-size:16px}.brand{font-size:11px}.hero{min-height:720px;padding-top:65px}.hero-visual{width:300px;height:300px;right:-80px;top:38%;opacity:.35}.hero-bottom p{width:72%;font-size:16px}.statement-inner,.section-head,.about{grid-template-columns:1fr}.statement-copy{margin-top:35px}.research-grid{grid-template-columns:1fr}.research-card{border-right:0;border-bottom:1px solid var(--line);padding:30px 0!important;min-height:460px}.program-list article{grid-template-columns:50px 1fr 25px;padding:30px 0}.program-list article p{grid-column:2}.about-mark .mark{width:260px;height:260px}.footer-top{align-items:flex-start;flex-direction:column;gap:60px}.footer-bottom{gap:20px;flex-wrap:wrap}.section,.statement,.programs,.about{padding-top:90px;padding-bottom:90px}
+  .shell{width:min(100% - 36px,1400px)} .nav{grid-template-columns:1fr auto}.nav nav{display:none}.nav-contact{font-size:0}.nav-contact span{font-size:16px}.brand{font-size:11px}.hero{min-height:720px;padding-top:65px}.hero-visual{width:300px;height:300px;right:-80px;top:38%;opacity:.35}.hero-bottom p{width:72%;font-size:16px}.statement-inner,.section-head,.about,.founder-grid{grid-template-columns:1fr}.statement-copy{margin-top:35px}.research-grid{grid-template-columns:1fr}.research-card{border-right:0;border-bottom:1px solid var(--line);padding:30px 0!important;min-height:460px}.program-list article{grid-template-columns:50px 1fr 25px;padding:30px 0}.program-list article p{grid-column:2}.about-mark .mark{width:260px;height:260px}.footer-top{align-items:flex-start;flex-direction:column;gap:60px}.footer-top>a{font-size:13px;gap:20px}.footer-bottom{gap:20px;flex-wrap:wrap}.section,.statement,.programs,.about,.founder{padding-top:90px;padding-bottom:90px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbital--two{animation:none}}

@@ -8,10 +8,10 @@ const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
   title: "Phason Labs — Intelligence in Motion",
-  description: "An independent AI research lab studying world models, machine reasoning, and emergent intelligence.",
+  description: "An independent AI research lab in Bhubaneswar studying how intelligence reorganizes itself.",
   openGraph: {
     title: "Phason Labs — Intelligence in Motion",
-    description: "An independent AI research lab studying the hidden structures of intelligence.",
+    description: "An independent AI research lab studying how intelligence reorganizes itself.",
     images: [{ url: "/og.png", width: 1734, height: 907, alt: "Phason Labs — Intelligence in Motion" }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },

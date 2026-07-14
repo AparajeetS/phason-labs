@@ -20,9 +20,34 @@ const research = [
 ];
 
 const programs = [
-  ["P–01", "Latent Geometry", "How do learned spaces encode causality, symmetry, and change?"],
-  ["P–02", "Adaptive Systems", "Can models update their own strategies without losing coherence?"],
-  ["P–03", "Open Reasoning", "What makes machine reasoning legible, testable, and trustworthy?"],
+  {
+    id: "P–01",
+    title: "MBE",
+    status: "Research direction",
+    text: "A research program investigating how internal model structures can support adaptive, compositional intelligence.",
+    href: "https://github.com/AparajeetS/phason-labs",
+  },
+  {
+    id: "P–02",
+    title: "Trainn Tools",
+    status: "Open source",
+    text: "Practical, transparent tooling for training experiments, evaluation workflows, and reproducible AI research.",
+    href: "https://github.com/AparajeetS/phason-labs",
+  },
+  {
+    id: "E–01",
+    title: "Latent Dynamics",
+    status: "To be explored",
+    text: "Studying whether models can discover stable internal laws for worlds that change beneath them.",
+    href: "#contact",
+  },
+  {
+    id: "E–02",
+    title: "Collective Inference",
+    status: "To be explored",
+    text: "Exploring how groups of specialized models might reason together without collapsing into consensus.",
+    href: "#contact",
+  },
 ];
 
 function Mark({ small = false }: { small?: boolean }) {
@@ -48,14 +73,14 @@ export default function Home() {
           <a href="#programs">Programs</a>
           <a href="#about">About</a>
         </nav>
-        <a className="nav-contact" href="mailto:hello@phasonlabs.ai">Contact <span>↗</span></a>
+        <a className="nav-contact" href="#contact">Contact <span>↘</span></a>
       </header>
 
       <section className="hero shell" id="top">
         <div className="hero-kicker"><span /> Independent AI research lab · 2026</div>
         <h1>Intelligence is not<br />a fixed <em>state.</em></h1>
         <div className="hero-bottom">
-          <p>Phason Labs studies the hidden structures that let intelligent systems shift, adapt, and emerge.</p>
+          <p>Phason Labs studies the hidden structures that let intelligent systems shift, adapt, reason, and emerge.</p>
           <a className="circle-link" href="#research" aria-label="Explore our research">↓</a>
         </div>
         <div className="hero-visual" aria-hidden="true">
@@ -96,13 +121,17 @@ export default function Home() {
         <div className="shell">
           <div className="section-head inverse">
             <div><p className="eyebrow violet">Active programs</p><h2>Questions in motion.</h2></div>
-            <p>Long-term investigations designed to produce open knowledge, useful systems, and better questions.</p>
+            <p>Current work and carefully framed questions that define where the lab may look next.</p>
           </div>
           <div className="program-list">
-            {programs.map(([id, title, text]) => (
-              <article key={id}>
-                <span>{id}</span><h3>{title}</h3><p>{text}</p><b>↗</b>
-              </article>
+            {programs.map((program) => (
+              <a href={program.href} target={program.href.startsWith("http") ? "_blank" : undefined} rel={program.href.startsWith("http") ? "noreferrer" : undefined} key={program.id}>
+                <article>
+                  <span>{program.id}</span>
+                  <div><h3>{program.title}</h3><small>{program.status}</small></div>
+                  <p>{program.text}</p><b>↗</b>
+                </article>
+              </a>
             ))}
           </div>
         </div>
@@ -118,10 +147,29 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="founder" id="contact">
+        <div className="shell founder-grid">
+          <div>
+            <p className="eyebrow violet">The lab</p>
+            <h2>Independent by design.</h2>
+          </div>
+          <div className="founder-profile">
+            <p>Phason Labs is an independent AI research lab founded by <strong>Aparajeet Shadangi</strong> in Bhubaneswar, India.</p>
+            <p>We are at the beginning: forming research directions, building open tools, and looking for the questions that matter before the answers become obvious.</p>
+            <dl>
+              <div><dt>Founder</dt><dd>Aparajeet Shadangi</dd></div>
+              <div><dt>Location</dt><dd>Bhubaneswar, India</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:aparajeet.shadangi@proton.me">aparajeet.shadangi@proton.me ↗</a></dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/AparajeetS/phason-labs" target="_blank" rel="noreferrer">AparajeetS/phason-labs ↗</a></dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div className="shell footer-top">
           <p>Have a question worth<br />reorganizing around?</p>
-          <a href="mailto:hello@phasonlabs.ai">hello@phasonlabs.ai <span>↗</span></a>
+          <a href="mailto:aparajeet.shadangi@proton.me">aparajeet.shadangi@proton.me <span>↗</span></a>
         </div>
         <div className="shell footer-bottom"><span>© 2026 Phason Labs</span><span>Research for intelligence in motion.</span><a href="#top">Back to top ↑</a></div>
       </footer>
