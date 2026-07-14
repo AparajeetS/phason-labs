@@ -29,7 +29,7 @@ const programs = [
   },
   {
     id: "P–02",
-    title: "Trainn Tools",
+    title: "TrainTools",
     status: "Open source",
     text: "Practical, transparent tooling for training experiments, evaluation workflows, and reproducible AI research.",
     href: "https://github.com/AparajeetS/phason-labs",
