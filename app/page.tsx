@@ -160,7 +160,7 @@ export default function Home() {
               <div><dt>Founder</dt><dd>Aparajeet Shadangi</dd></div>
               <div><dt>Location</dt><dd>Bhubaneswar, India</dd></div>
               <div><dt>Email</dt><dd><a href="mailto:aparajeet.shadangi@proton.me">aparajeet.shadangi@proton.me ↗</a></dd></div>
-              <div><dt>GitHub</dt><dd><a href="https://github.com/AparajeetS/phason-labs" target="_blank" rel="noreferrer">AparajeetS/phason-labs ↗</a></dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/AparajeetS" target="_blank" rel="noreferrer">github.com/AparajeetS ↗</a></dd></div>
             </dl>
           </div>
         </div>
