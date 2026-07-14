@@ -25,14 +25,14 @@ const programs = [
     title: "MBE",
     status: "Research direction",
     text: "A research program investigating how internal model structures can support adaptive, compositional intelligence.",
-    href: "https://github.com/AparajeetS/phason-labs",
+    href: "https://github.com/AparajeetS/marginal-baseline-eval",
   },
   {
     id: "P–02",
     title: "TrainTools",
     status: "Open source",
     text: "Practical, transparent tooling for training experiments, evaluation workflows, and reproducible AI research.",
-    href: "https://github.com/AparajeetS/phason-labs",
+    href: "https://github.com/AparajeetS/Traintools",
   },
   {
     id: "E–01",
