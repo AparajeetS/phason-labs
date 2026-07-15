@@ -36,6 +36,8 @@ jobs:
         run: npm run build:pages
         env:
           SITE_URL: https://aparajeets.github.io/phason-labs
+      - name: Promote research atlas
+        run: cp public/phason-labs-concept.html out/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
