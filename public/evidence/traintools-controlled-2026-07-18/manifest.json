@@ -1,0 +1,14 @@
+{
+  "protocol": "PROTOCOL.md",
+  "started_at_unix": 1784329340.882913,
+  "environment": {
+    "python": "3.14.3",
+    "torch": "2.12.0+cpu",
+    "traintools": "0.6.2",
+    "mbe_eval": "0.4.0",
+    "traintools_path": "C:\\tmp\\traintools_mbe_trial_env\\Lib\\site-packages\\traintools\\__init__.py",
+    "mbe_eval_path": "C:\\Users\\apara\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\mbe_eval\\__init__.py",
+    "device": "cpu"
+  },
+  "script_sha256": "0d614a85cfa2a1366f3c11b3aa54f70a58837a1d2936f732df64c273c8432e42"
+}

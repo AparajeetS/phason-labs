@@ -1,0 +1,84 @@
+{
+  "manifest": {
+    "protocol": "PROTOCOL.md",
+    "started_at_unix": 1784329340.882913,
+    "environment": {
+      "python": "3.14.3",
+      "torch": "2.12.0+cpu",
+      "traintools": "0.6.2",
+      "mbe_eval": "0.4.0",
+      "traintools_path": "C:\\tmp\\traintools_mbe_trial_env\\Lib\\site-packages\\traintools\\__init__.py",
+      "mbe_eval_path": "C:\\Users\\apara\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\mbe_eval\\__init__.py",
+      "device": "cpu"
+    },
+    "script_sha256": "0d614a85cfa2a1366f3c11b3aa54f70a58837a1d2936f732df64c273c8432e42"
+  },
+  "paired": {
+    "paired_configurations": 48,
+    "exact_parameter_hash_matches": 48,
+    "max_abs_test_accuracy_difference": 0.0,
+    "max_abs_validation_loss_difference": 0.0,
+    "plain_total_seconds": 4.998094699985813,
+    "traintools_total_seconds": 5.553275999991456,
+    "mean_overhead_percent": 11.107858760803758,
+    "median_runtime_ratio": 1.1879204517017627,
+    "p90_runtime_ratio": 1.7524421438199718,
+    "non_interference_gate_pass": true
+  },
+  "known_failures": {
+    "trials_per_condition": 25,
+    "injected_cases": 100,
+    "clean_control_cases": 50,
+    "injected_detection_rate": 1.0,
+    "clean_false_positive_rate": 0.0,
+    "gate_pass": true,
+    "by_condition": {
+      "amplified_gradient": {
+        "detections": 25,
+        "trials": 25
+      },
+      "class_imbalance": {
+        "detections": 25,
+        "trials": 25
+      },
+      "clean_batch": {
+        "detections": 0,
+        "trials": 25
+      },
+      "clean_gradient": {
+        "detections": 0,
+        "trials": 25
+      },
+      "invalid_label": {
+        "detections": 25,
+        "trials": 25
+      },
+      "nan_feature": {
+        "detections": 25,
+        "trials": 25
+      }
+    }
+  },
+  "aum_label_noise": {
+    "seeds": 5,
+    "mean_auroc": 0.9999479166666667,
+    "min_auroc": 0.9997743055555556,
+    "mean_precision_at_20pct": 0.9949999999999999,
+    "min_precision_at_20pct": 0.9833333333333333,
+    "random_precision_baseline": 0.2,
+    "gate_pass": true
+  },
+  "mbe": {
+    "rows": 48,
+    "metrics": 7,
+    "bootstrap_resamples": 500,
+    "duration_s": 19.18962649999594,
+    "random_negative_control_partial_r": 0.29689576425403646,
+    "random_negative_control_ci": [
+      -0.009700100144195912,
+      0.5293280359000039
+    ],
+    "random_negative_control_gate_pass": false
+  },
+  "all_primary_gates_pass": false
+}
