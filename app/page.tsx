@@ -21,6 +21,8 @@ const telemetry = {
     links: [
       { label: "PyPI", href: "https://pypi.org/project/mbe-eval/" },
       { label: "GitHub", href: "https://github.com/AparajeetS/marginal-baseline-eval" },
+      { label: "Agent guide", href: "https://github.com/AparajeetS/marginal-baseline-eval/blob/master/AGENTS.md" },
+      { label: "llms.txt", href: "https://github.com/AparajeetS/marginal-baseline-eval/blob/master/llms.txt" },
     ],
     stats: [
       { value: "~725", label: "PyPI downloads since 23 Jun, mirrors excluded" },
@@ -43,6 +45,8 @@ const telemetry = {
     links: [
       { label: "PyPI", href: "https://pypi.org/project/traintools/" },
       { label: "GitHub", href: "https://github.com/AparajeetS/Traintools" },
+      { label: "Agent guide", href: "https://github.com/AparajeetS/Traintools/blob/main/AGENTS.md" },
+      { label: "llms.txt", href: "https://github.com/AparajeetS/Traintools/blob/main/llms.txt" },
     ],
     stats: [
       { value: "545", label: "PyPI downloads last month, mirrors excluded" },

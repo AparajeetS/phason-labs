@@ -27,6 +27,8 @@ test("server-renders the Phason research site and controlled evidence", async ()
   assert.match(html, /Attention is not adoption/);
   assert.match(html, /mbe-eval/);
   assert.match(html, /traintools/);
+  assert.match(html, /Agent guide/);
+  assert.match(html, /llms\.txt/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
@@ -45,12 +47,16 @@ test("keeps evidence claims linked to public artifacts", async () => {
   assert.match(page, /122/);
   assert.match(page, /545/);
   assert.match(page, /organic curiosity is plausible/);
+  assert.match(page, /AGENTS\.md/);
+  assert.match(page, /llms\.txt/);
   const staticConcept = await readFile(new URL("../public/phason-labs-concept.html", import.meta.url), "utf8");
   assert.match(staticConcept, /Public telemetry/);
   assert.match(staticConcept, /Attention is/);
   assert.match(staticConcept, /mbe-eval/);
   assert.match(staticConcept, /traintools/);
   assert.match(staticConcept, /Unique GitHub viewers over 14 days/);
+  assert.match(staticConcept, /AGENTS\.md/);
+  assert.match(staticConcept, /llms\.txt/);
   assert.match(layout, /title:\s*"Phason Labs/);
   assert.doesNotMatch(page, /codex-preview|_sites-preview/);
 });
