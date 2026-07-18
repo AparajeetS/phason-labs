@@ -45,6 +45,12 @@ test("keeps evidence claims linked to public artifacts", async () => {
   assert.match(page, /122/);
   assert.match(page, /545/);
   assert.match(page, /organic curiosity is plausible/);
+  const staticConcept = await readFile(new URL("../public/phason-labs-concept.html", import.meta.url), "utf8");
+  assert.match(staticConcept, /Public telemetry/);
+  assert.match(staticConcept, /Attention is/);
+  assert.match(staticConcept, /mbe-eval/);
+  assert.match(staticConcept, /traintools/);
+  assert.match(staticConcept, /Unique GitHub viewers over 14 days/);
   assert.match(layout, /title:\s*"Phason Labs/);
   assert.doesNotMatch(page, /codex-preview|_sites-preview/);
 });
