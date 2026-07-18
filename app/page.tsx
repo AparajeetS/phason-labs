@@ -11,6 +11,53 @@ const programs = [
   { id: "E-02", title: "Collective Inference", status: "To be explored", text: "Exploring how groups of specialized models might reason together without collapsing into consensus.", href: "#contact" },
 ];
 
+const telemetry = {
+  mbe: {
+    name: "MBE",
+    packageName: "mbe-eval",
+    repo: "AparajeetS/marginal-baseline-eval",
+    date: "18 July 2026",
+    summary: "Stronger curiosity signal: substantial GitHub views and clones, but no public engagement markers yet.",
+    links: [
+      { label: "PyPI", href: "https://pypi.org/project/mbe-eval/" },
+      { label: "GitHub", href: "https://github.com/AparajeetS/marginal-baseline-eval" },
+    ],
+    stats: [
+      { value: "~725", label: "PyPI downloads since 23 Jun, mirrors excluded" },
+      { value: "122", label: "Unique GitHub viewers over 14 days" },
+      { value: "100", label: "Unique GitHub cloners over 14 days" },
+      { value: "0", label: "Stars, forks, watchers, and open issues" },
+    ],
+    notes: [
+      "Largest observed PyPI days: 175 downloads on 13 Jul and 102 on 17 Jul.",
+      "GitHub traffic peaked on 13 Jul with 99 unique viewers and 37 unique cloners.",
+      "Interpretation: organic curiosity is plausible; public adoption is not established.",
+    ],
+  },
+  traintools: {
+    name: "TrainTools",
+    packageName: "traintools",
+    repo: "AparajeetS/Traintools",
+    date: "18 July 2026",
+    summary: "Early package activity with release-shaped spikes; adoption signal is still weak.",
+    links: [
+      { label: "PyPI", href: "https://pypi.org/project/traintools/" },
+      { label: "GitHub", href: "https://github.com/AparajeetS/Traintools" },
+    ],
+    stats: [
+      { value: "545", label: "PyPI downloads last month, mirrors excluded" },
+      { value: "253", label: "PyPI downloads last week, mirrors excluded" },
+      { value: "37", label: "PyPI downloads last day, mirrors excluded" },
+      { value: "37", label: "Unique GitHub cloners over 14 days" },
+    ],
+    notes: [
+      "Latest public release observed: v0.6.2 on 16 Jul.",
+      "GitHub showed 6 unique viewers over 14 days, with 0 stars and 0 forks.",
+      "Interpretation: some touches and installs; not enough evidence for organic users yet.",
+    ],
+  },
+};
+
 function Mark({ small = false }: { small?: boolean }) {
   return (
     <span className={`mark ${small ? "mark--small" : ""}`} aria-hidden="true">
@@ -112,6 +159,46 @@ export default function Home() {
             <p>The accompanying 48-row MBE audit is not used as promotional evidence because its random negative control missed the frozen point-estimate threshold, although its confidence interval crossed zero. The first defective attempt, correction log, and corrected output remain public.</p>
             <div><a href="/evidence/traintools-controlled-2026-07-18/CORRECTION_LOG.md">Correction log</a><a href="/evidence/traintools-controlled-2026-07-18/mbe_report.md">Withheld MBE report</a></div>
           </div>
+        </div>
+      </section>
+
+      <section className="telemetry shell" id="telemetry">
+        <div className="section-head">
+          <div><p className="eyebrow violet">Public telemetry / 18 July 2026</p><h2>Attention is not adoption.</h2></div>
+          <p>Package downloads and repository traffic are reported as weak public signals. They help track curiosity, but they do not prove active users.</p>
+        </div>
+        <div className="telemetry-tabs">
+          <input type="radio" name="telemetry" id="telemetry-mbe" defaultChecked />
+          <input type="radio" name="telemetry" id="telemetry-traintools" />
+          <div className="tab-controls" role="tablist" aria-label="Project telemetry">
+            <label htmlFor="telemetry-mbe" role="tab">MBE</label>
+            <label htmlFor="telemetry-traintools" role="tab">TrainTools</label>
+          </div>
+          {(["mbe", "traintools"] as const).map((key) => {
+            const project = telemetry[key];
+            return (
+              <article className={`telemetry-panel telemetry-panel--${key}`} key={project.name}>
+                <div className="telemetry-intro">
+                  <p className="eyebrow">{project.packageName}</p>
+                  <h3>{project.name}</h3>
+                  <p>{project.summary}</p>
+                  <div>
+                    {project.links.map((link) => (
+                      <a href={link.href} target="_blank" rel="noreferrer" key={link.label}>{link.label} <span aria-hidden="true">&#8599;</span></a>
+                    ))}
+                  </div>
+                </div>
+                <div className="telemetry-stats">
+                  {project.stats.map((stat) => (
+                    <div className="telemetry-stat" key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>
+                  ))}
+                </div>
+                <ul className="telemetry-notes">
+                  {project.notes.map((note) => <li key={note}>{note}</li>)}
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </section>
 

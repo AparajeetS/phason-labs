@@ -23,6 +23,10 @@ test("server-renders the Phason research site and controlled evidence", async ()
   assert.match(html, /48 \/ 48/);
   assert.match(html, /Controlled benchmark/);
   assert.match(html, /Publication boundary/);
+  assert.match(html, /Public telemetry/);
+  assert.match(html, /Attention is not adoption/);
+  assert.match(html, /mbe-eval/);
+  assert.match(html, /traintools/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
@@ -36,6 +40,11 @@ test("keeps evidence claims linked to public artifacts", async () => {
   assert.match(page, /benchmark_summary\.json/);
   assert.match(page, /CORRECTION_LOG\.md/);
   assert.match(page, /not used as promotional evidence/);
+  assert.match(page, /telemetry-mbe/);
+  assert.match(page, /telemetry-traintools/);
+  assert.match(page, /122/);
+  assert.match(page, /545/);
+  assert.match(page, /organic curiosity is plausible/);
   assert.match(layout, /title:\s*"Phason Labs/);
   assert.doesNotMatch(page, /codex-preview|_sites-preview/);
 });
