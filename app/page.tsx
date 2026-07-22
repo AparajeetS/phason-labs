@@ -160,18 +160,18 @@ export default function Home() {
           </div>
           <div className="evidence-development">
             <div className="evidence-development-head">
-              <div><p className="eyebrow violet">PTDB-1 development result / 22 July 2026</p><h3>One architecture.<br />Every row auditable.</h3></div>
-              <p>The first validated CIFAR-10/ResNet-18 shard now has a public raw-data bundle and a separate standard-library auditor.</p>
+              <div><p className="eyebrow violet">PTDB-1 architecture replication / 22 July 2026</p><h3>Two architectures.<br />Every row auditable.</h3></div>
+              <p>ResNet-18 and WRN-28-2 now have separate raw-data bundles, frozen analyses, and standard-library audits.</p>
             </div>
             <div className="development-stats" aria-label="PTDB-1 verification summary">
-              <div><strong>405k</strong><span>Example-level records recomputed</span></div>
-              <div><strong>12 / 12</strong><span>Complete executions</span></div>
-              <div><strong>3 / 3</strong><span>Exact clean model pairs</span></div>
-              <div><strong>4e-15</strong><span>Maximum metric discrepancy</span></div>
+              <div><strong>810k</strong><span>Example-level records recomputed</span></div>
+              <div><strong>24 / 24</strong><span>Complete executions</span></div>
+              <div><strong>6 / 6</strong><span>Exact clean model pairs</span></div>
+              <div><strong>5.5e-15</strong><span>Maximum metric discrepancy</span></div>
             </div>
-            <p>AUM reached 0.9885 aggregate AUROC and beat mean loss in all six noisy runs. EL2N reached 0.9932 overall, winning the three class-conditional runs while AUM led the three symmetric-noise runs. Forgetting count reversed below random in all six runs at 0.3361.</p>
-            <p className="evidence-caveat"><strong>Boundary:</strong> synthetic corruption, one dataset, one architecture, and two regime clusters. Gradient-norm and stopping claims are withheld; the protected holdout remains sealed.</p>
-            <div className="development-links"><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/README.md">Evidence bundle</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/DUE_DILIGENCE.md">Due diligence</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/independent_audit.json">Independent audit</a></div>
+            <p>Across both architectures, AUM reached 0.9872 aggregate AUROC and beat mean loss in all twelve noisy runs. AUM led EL2N in all six symmetric-noise runs; EL2N led AUM in all six class-conditional runs. The metric ordering replicated with the corruption regime.</p>
+            <p className="evidence-caveat"><strong>Boundary:</strong> synthetic corruption, one dataset, two related CNNs, and four regime clusters. Gradient-norm and stopping claims are withheld; the protected holdout remains sealed.</p>
+            <div className="development-links"><a href="/evidence/ptdb-1-cifar10-wrn28-2-2026-07-22/CROSS_ARCHITECTURE.md">Combined result</a><a href="/evidence/ptdb-1-cifar10-wrn28-2-2026-07-22/DUE_DILIGENCE.md">WRN due diligence</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/DUE_DILIGENCE.md">ResNet due diligence</a></div>
           </div>
           <div className="evidence-boundary">
             <p className="eyebrow">Publication boundary</p>
