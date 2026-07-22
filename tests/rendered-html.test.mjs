@@ -22,6 +22,9 @@ test("server-renders the Phason research site and controlled evidence", async ()
   assert.match(html, /Measured, then claimed/);
   assert.match(html, /48 \/ 48/);
   assert.match(html, /Controlled benchmark/);
+  assert.match(html, /405k/);
+  assert.match(html, /Every row auditable/);
+  assert.match(html, /Maximum metric discrepancy/);
   assert.match(html, /Publication boundary/);
   assert.match(html, /Public telemetry/);
   assert.match(html, /Attention is not adoption/);
@@ -42,6 +45,9 @@ test("keeps evidence claims linked to public artifacts", async () => {
   assert.match(page, /benchmark_summary\.json/);
   assert.match(page, /CORRECTION_LOG\.md/);
   assert.match(page, /not used as promotional evidence/);
+  assert.match(page, /ptdb-1-cifar10-resnet18-2026-07-22/);
+  assert.match(page, /protected holdout remains sealed/i);
+  assert.match(page, /Gradient-norm and stopping claims are withheld/);
   assert.match(page, /telemetry-mbe/);
   assert.match(page, /telemetry-traintools/);
   assert.match(page, /122/);
@@ -55,6 +61,9 @@ test("keeps evidence claims linked to public artifacts", async () => {
   assert.match(staticConcept, /mbe-eval/);
   assert.match(staticConcept, /traintools/);
   assert.match(staticConcept, /Unique GitHub viewers over 14 days/);
+  assert.match(staticConcept, /405k/);
+  assert.match(staticConcept, /Every row auditable/);
+  assert.match(staticConcept, /protected holdout remains sealed/i);
   assert.match(staticConcept, /AGENTS\.md/);
   assert.match(staticConcept, /llms\.txt/);
   assert.match(layout, /title:\s*"Phason Labs/);

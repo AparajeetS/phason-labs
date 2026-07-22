@@ -158,10 +158,20 @@ export default function Home() {
               <a href="/evidence/traintools-controlled-2026-07-18/paired_runs.csv">Run ledger <span aria-hidden="true">&#8599;</span></a>
             </div>
           </div>
-          <div className="evidence-boundary">
-            <p className="eyebrow">Development benchmark / 22 July 2026</p>
-            <p>A 25-epoch CIFAR-10/ResNet-18 shard found AUM AUROC 0.9885, EL2N AUROC 0.9932, and a forgetting-count reversal to 0.3361. All three clean instrumented twins matched their plain models exactly. This is one development architecture, not holdout confirmation.</p>
-            <div><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/README.md">Evidence bundle</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/DUE_DILIGENCE.md">Due diligence</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/independent_audit.json">Independent audit</a></div>
+          <div className="evidence-development">
+            <div className="evidence-development-head">
+              <div><p className="eyebrow violet">PTDB-1 development result / 22 July 2026</p><h3>One architecture.<br />Every row auditable.</h3></div>
+              <p>The first validated CIFAR-10/ResNet-18 shard now has a public raw-data bundle and a separate standard-library auditor.</p>
+            </div>
+            <div className="development-stats" aria-label="PTDB-1 verification summary">
+              <div><strong>405k</strong><span>Example-level records recomputed</span></div>
+              <div><strong>12 / 12</strong><span>Complete executions</span></div>
+              <div><strong>3 / 3</strong><span>Exact clean model pairs</span></div>
+              <div><strong>4e-15</strong><span>Maximum metric discrepancy</span></div>
+            </div>
+            <p>AUM reached 0.9885 aggregate AUROC and beat mean loss in all six noisy runs. EL2N reached 0.9932 overall, winning the three class-conditional runs while AUM led the three symmetric-noise runs. Forgetting count reversed below random in all six runs at 0.3361.</p>
+            <p className="evidence-caveat"><strong>Boundary:</strong> synthetic corruption, one dataset, one architecture, and two regime clusters. Gradient-norm and stopping claims are withheld; the protected holdout remains sealed.</p>
+            <div className="development-links"><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/README.md">Evidence bundle</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/DUE_DILIGENCE.md">Due diligence</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/independent_audit.json">Independent audit</a></div>
           </div>
           <div className="evidence-boundary">
             <p className="eyebrow">Publication boundary</p>
