@@ -1,0 +1,33 @@
+{
+  "bundle": "PTDB-1 CIFAR-10/ResNet-18 development evidence",
+  "created": "2026-07-22",
+  "files": {
+    "analysis_manifest.json": "a97ffecb157774e8508754d5db1ff53d7db09ed323338629f4fadb72036d0f0f",
+    "ANALYSIS_PLAN.md": "f0da2c400212a7f4ece507039de030549d7e6d21557ba8bc60ba238cd4187680",
+    "analyze_base.py": "caa2e2a1339dc3fbbe32386658362ebd3cad00371e5ae86f4bd52e1451bc732f",
+    "base_summary.json": "6f547b4b284593e6f58d48727cbf091b1bd4e1200dabaadd803538f89a9fd7cb",
+    "DUE_DILIGENCE.md": "df8535c87448b103e272a53427b29cbc634c133135f73b88bef2c104862afd43",
+    "epoch_metrics.csv": "859ca0dbbc4d8fd5d3b85d12afe77001600466d3bc3b1d2803c804ce5488b503",
+    "epoch_metrics.partial.csv": "859ca0dbbc4d8fd5d3b85d12afe77001600466d3bc3b1d2803c804ce5488b503",
+    "errors.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "errors.partial.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "example_scores.csv.gz": "171d4f0bfbc1aec90f43216a82e605a90530bf15b219f3f13a9205ac8f2973a8",
+    "execution_summary.json": "56cb68138b2363270fb5c722ed03b7d9cc0fa18e2c2c1653d1d453e31b643ce7",
+    "frozen_protocol_pointer.json": "bcc22089bdcbcf534b8501189ddcf6f1b73aee293ce643d338b8ea97e8e4d2a7",
+    "FULL_RUN_PLAN.md": "17b6fdb21e081961d82dc3cf012153b8fbeed1980c5acf2d4a06e834dda89fb4",
+    "independent_audit.json": "aca72b07db0474aa409a96e837c77d4a4d7aaac981d3e48ae3bf30d6f7f91e69",
+    "independent_audit.py": "16b71192af1b56565950c30093becb1682461f13efd719942129afec5f7124f0",
+    "label_noise_by_run.csv": "6748d274a2347b1a8beaf81f6ae9045d7e92f85f5c3362b582c9e549c40a1a6c",
+    "manifest.json": "2995935abf1406bdfaf7d2af99a8650b141712fb29dbab762210178ad1e5e580",
+    "manifest.started.json": "86692bcdf1f9fc372c40d2448d7b5275a1de77392895c05bb21d9ef1edffd6b8",
+    "paired_noninterference.csv": "d34cf83566fc6e386b30cd0635ac797ce3729b92d78e25d309a99cc414b41e31",
+    "PROTOCOL.md": "5b01d1ca47b6ebca6601a9debc80b0edfb262c3ee6feeb8e0cc998b0ee92821e",
+    "README.md": "f3b714a9e6b9b626f6e79b02ca621d4177ff4d55e945e939e8cc36f34d57e592",
+    "RESULT.md": "3a0eec8abc5a1d4a2ea141eca9add7ee487ebcef066d8896780a97aa752795a6",
+    "run_shard.py": "1da60d48e2c0946ea665ba5a4d946598fa525be589c62eb2253ce2133b95a8d1",
+    "run_summary.csv": "9215c541142e5533a5e1b3a9c1a9483af2fbf6a6d5f45df7a6eae7903bed9318",
+    "run_summary.partial.csv": "9215c541142e5533a5e1b3a9c1a9483af2fbf6a6d5f45df7a6eae7903bed9318",
+    "shard_validation.json": "787dba119b20b41fad713bff57a480d1f05b5995958965127b41fc98b754f01e",
+    "trainguard_decision_targets.csv": "fa3892536240432f88c05711eafb10b838cb1b4982d9271ca0c6b0f496112dce"
+  }
+}

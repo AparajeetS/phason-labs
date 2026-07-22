@@ -1,0 +1,312 @@
+{
+  "audit_pass": true,
+  "checks": {
+    "execution_manifest_hashes_match": true,
+    "analysis_script_and_output_hashes_match": true,
+    "protocol_hash_matches_frozen_pointer": true,
+    "run_script_hash_matches_manifest": true,
+    "frozen_validator_passed": true,
+    "zero_error_rows": true,
+    "twelve_complete_executions": true,
+    "three_exact_noninterference_pairs": true,
+    "three_hundred_epoch_rows": true,
+    "primary_loss_and_accuracy_curves_are_finite": true,
+    "four_hundred_five_thousand_example_rows": true,
+    "unique_example_ids_within_each_run": true,
+    "corruption_counts_are_exact": true,
+    "all_reported_ranking_metrics_recomputed": true
+  },
+  "maximum_metric_recomputation_difference": 3.9968028886505635e-15,
+  "recomputed_noisy_runs": [
+    {
+      "run_id": "development_base__cifar10__resnet18__s11__class_conditional__instrumented",
+      "seed": 11,
+      "regime": "class_conditional",
+      "aum_auroc": 0.9826842422839506,
+      "aum_average_precision": 0.8720232172394651,
+      "aum_precision_at_noise": 0.8961111111111111,
+      "el2n_auroc": 0.9925192870370371,
+      "el2n_average_precision": 0.9656491609010914,
+      "el2n_precision_at_noise": 0.924,
+      "forgetting_auroc": 0.3573033024691358,
+      "forgetting_average_precision": 0.1733048681867281,
+      "forgetting_precision_at_noise": 0.10111111111111111,
+      "mean_confidence_auroc": 0.9849961018518518,
+      "mean_confidence_average_precision": 0.893617944260686,
+      "mean_confidence_precision_at_noise": 0.9031111111111111,
+      "mean_loss_auroc": 0.9640182978395062,
+      "mean_loss_average_precision": 0.7603616601542077,
+      "mean_loss_precision_at_noise": 0.8181111111111111,
+      "random_auroc": 0.4956667777777778,
+      "random_average_precision": 0.19646344969835514,
+      "random_precision_at_noise": 0.19533333333333333
+    },
+    {
+      "run_id": "development_base__cifar10__resnet18__s11__symmetric__instrumented",
+      "seed": 11,
+      "regime": "symmetric",
+      "aum_auroc": 0.9941661805555555,
+      "aum_average_precision": 0.9809793801977658,
+      "aum_precision_at_noise": 0.93,
+      "el2n_auroc": 0.9940047932098766,
+      "el2n_average_precision": 0.9797675212371593,
+      "el2n_precision_at_noise": 0.9291111111111111,
+      "forgetting_auroc": 0.3146015385802469,
+      "forgetting_average_precision": 0.17237211671952293,
+      "forgetting_precision_at_noise": 0.07655555555555556,
+      "mean_confidence_auroc": 0.993799537037037,
+      "mean_confidence_average_precision": 0.9796731493273974,
+      "mean_confidence_precision_at_noise": 0.9272222222222222,
+      "mean_loss_auroc": 0.9933691574074074,
+      "mean_loss_average_precision": 0.9789521913112809,
+      "mean_loss_precision_at_noise": 0.9263333333333333,
+      "random_auroc": 0.5019766327160494,
+      "random_average_precision": 0.20235220398534634,
+      "random_precision_at_noise": 0.2008888888888889
+    },
+    {
+      "run_id": "development_base__cifar10__resnet18__s23__class_conditional__instrumented",
+      "seed": 23,
+      "regime": "class_conditional",
+      "aum_auroc": 0.983354549382716,
+      "aum_average_precision": 0.878756268517385,
+      "aum_precision_at_noise": 0.9042222222222223,
+      "el2n_auroc": 0.9926560709876543,
+      "el2n_average_precision": 0.9680416054396194,
+      "el2n_precision_at_noise": 0.928,
+      "forgetting_auroc": 0.35882293055555553,
+      "forgetting_average_precision": 0.17291121384503133,
+      "forgetting_precision_at_noise": 0.09755555555555556,
+      "mean_confidence_auroc": 0.9859877777777778,
+      "mean_confidence_average_precision": 0.9025038629002307,
+      "mean_confidence_precision_at_noise": 0.9102222222222223,
+      "mean_loss_auroc": 0.9662698796296296,
+      "mean_loss_average_precision": 0.7723028808845608,
+      "mean_loss_precision_at_noise": 0.8297777777777777,
+      "random_auroc": 0.4988718734567901,
+      "random_average_precision": 0.19924355163465515,
+      "random_precision_at_noise": 0.1932222222222222
+    },
+    {
+      "run_id": "development_base__cifar10__resnet18__s23__symmetric__instrumented",
+      "seed": 23,
+      "regime": "symmetric",
+      "aum_auroc": 0.9935121450617284,
+      "aum_average_precision": 0.9790659395506589,
+      "aum_precision_at_noise": 0.9244444444444444,
+      "el2n_auroc": 0.993393737654321,
+      "el2n_average_precision": 0.978272721810787,
+      "el2n_precision_at_noise": 0.9265555555555556,
+      "forgetting_auroc": 0.3146654320987654,
+      "forgetting_average_precision": 0.17190435760201211,
+      "forgetting_precision_at_noise": 0.08322222222222223,
+      "mean_confidence_auroc": 0.9932751419753086,
+      "mean_confidence_average_precision": 0.9780002930372095,
+      "mean_confidence_precision_at_noise": 0.9242222222222222,
+      "mean_loss_auroc": 0.9927054598765432,
+      "mean_loss_average_precision": 0.976958418435606,
+      "mean_loss_precision_at_noise": 0.9224444444444444,
+      "random_auroc": 0.497183,
+      "random_average_precision": 0.1981533409031597,
+      "random_precision_at_noise": 0.19577777777777777
+    },
+    {
+      "run_id": "development_base__cifar10__resnet18__s37__class_conditional__instrumented",
+      "seed": 37,
+      "regime": "class_conditional",
+      "aum_auroc": 0.9833341651234568,
+      "aum_average_precision": 0.8794261224322988,
+      "aum_precision_at_noise": 0.9026666666666666,
+      "el2n_auroc": 0.9925668858024691,
+      "el2n_average_precision": 0.9674171079141735,
+      "el2n_precision_at_noise": 0.9262222222222222,
+      "forgetting_auroc": 0.35762558333333333,
+      "forgetting_average_precision": 0.17360586582603554,
+      "forgetting_precision_at_noise": 0.09877777777777778,
+      "mean_confidence_auroc": 0.9853715648148148,
+      "mean_confidence_average_precision": 0.8988905060123058,
+      "mean_confidence_precision_at_noise": 0.907,
+      "mean_loss_auroc": 0.9655144722222222,
+      "mean_loss_average_precision": 0.7693615700595275,
+      "mean_loss_precision_at_noise": 0.8267777777777777,
+      "random_auroc": 0.4982838333333333,
+      "random_average_precision": 0.201429757167338,
+      "random_precision_at_noise": 0.20144444444444445
+    },
+    {
+      "run_id": "development_base__cifar10__resnet18__s37__symmetric__instrumented",
+      "seed": 37,
+      "regime": "symmetric",
+      "aum_auroc": 0.9940007175925926,
+      "aum_average_precision": 0.9805185199107921,
+      "aum_precision_at_noise": 0.9281111111111111,
+      "el2n_auroc": 0.9938268703703703,
+      "el2n_average_precision": 0.9794349628860766,
+      "el2n_precision_at_noise": 0.9307777777777778,
+      "forgetting_auroc": 0.31341473148148147,
+      "forgetting_average_precision": 0.17281285849210087,
+      "forgetting_precision_at_noise": 0.08055555555555556,
+      "mean_confidence_auroc": 0.9936059104938272,
+      "mean_confidence_average_precision": 0.9791935882839927,
+      "mean_confidence_precision_at_noise": 0.9276666666666666,
+      "mean_loss_auroc": 0.9930999845679013,
+      "mean_loss_average_precision": 0.9784196722604422,
+      "mean_loss_precision_at_noise": 0.9256666666666666,
+      "random_auroc": 0.4998255401234568,
+      "random_average_precision": 0.19973233583662564,
+      "random_precision_at_noise": 0.19766666666666666
+    }
+  ],
+  "cross_run_checks": {
+    "aum_auroc_range": [
+      0.9826842422839506,
+      0.9941661805555555
+    ],
+    "el2n_auroc_range": [
+      0.9925192870370371,
+      0.9940047932098766
+    ],
+    "mean_loss_auroc_range": [
+      0.9640182978395062,
+      0.9933691574074074
+    ],
+    "forgetting_auroc_range": [
+      0.31341473148148147,
+      0.35882293055555553
+    ],
+    "aum_beats_mean_loss_runs": 6,
+    "el2n_beats_aum_runs": 3,
+    "noisy_runs": 6
+  },
+  "epoch_diagnostic_findings": {
+    "nonfinite_mean_gradient_norm_rows": [
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__clean__plain",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__clean__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__symmetric__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__class_conditional__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__clean__plain",
+        "epoch": 24,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__clean__instrumented",
+        "epoch": 24,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__symmetric__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__class_conditional__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__clean__plain",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__clean__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__symmetric__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__class_conditional__instrumented",
+        "epoch": 23,
+        "value": "inf"
+      }
+    ],
+    "nonfinite_guard_prediction_rows": [
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__clean__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__symmetric__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s11__class_conditional__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__clean__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__symmetric__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s23__class_conditional__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__clean__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__symmetric__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      },
+      {
+        "run_id": "development_base__cifar10__resnet18__s37__class_conditional__instrumented",
+        "epoch": 1,
+        "value": "inf"
+      }
+    ],
+    "guard_stop_decisions": 0,
+    "interpretation": "Loss and accuracy curves are finite. Mean gradient norm is not reliable for the listed late epochs. TrainGuard's epoch-1 infinities reflect insufficient fit history; this shard does not validate stopping."
+  },
+  "claim_status": {
+    "supported": [
+      "AUM strongly detects the injected 20% label corruption in this CIFAR-10/ResNet-18 development slice.",
+      "AUM exceeds accumulated mean loss in all six noisy runs in this slice.",
+      "EL2N exceeds AUM in three of six noisy runs and has the higher aggregate AUROC.",
+      "Forgetting count is below random in all six noisy runs for this target and score direction.",
+      "TrainTools instrumentation is exactly non-interfering in the three declared clean pairs."
+    ],
+    "not_established": [
+      "Cross-architecture or cross-dataset generalization.",
+      "Performance on naturally mislabeled data.",
+      "A universal ranking of training metrics.",
+      "Validation of MBE's broader metric-selection claim.",
+      "Protected-holdout or submission-grade confirmation.",
+      "Validity of mean gradient norm at the 12 listed late-epoch rows.",
+      "TrainGuard stopping utility; the base shard recorded complete curves but no stop decisions."
+    ]
+  }
+}

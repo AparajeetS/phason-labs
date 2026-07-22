@@ -159,6 +159,11 @@ export default function Home() {
             </div>
           </div>
           <div className="evidence-boundary">
+            <p className="eyebrow">Development benchmark / 22 July 2026</p>
+            <p>A 25-epoch CIFAR-10/ResNet-18 shard found AUM AUROC 0.9885, EL2N AUROC 0.9932, and a forgetting-count reversal to 0.3361. All three clean instrumented twins matched their plain models exactly. This is one development architecture, not holdout confirmation.</p>
+            <div><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/README.md">Evidence bundle</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/DUE_DILIGENCE.md">Due diligence</a><a href="/evidence/ptdb-1-cifar10-resnet18-2026-07-22/independent_audit.json">Independent audit</a></div>
+          </div>
+          <div className="evidence-boundary">
             <p className="eyebrow">Publication boundary</p>
             <p>The accompanying 48-row MBE audit is not used as promotional evidence because its random negative control missed the frozen point-estimate threshold, although its confidence interval crossed zero. The first defective attempt, correction log, and corrected output remain public.</p>
             <div><a href="/evidence/traintools-controlled-2026-07-18/CORRECTION_LOG.md">Correction log</a><a href="/evidence/traintools-controlled-2026-07-18/mbe_report.md">Withheld MBE report</a></div>
